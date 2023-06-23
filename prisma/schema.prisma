@@ -8,8 +8,8 @@ generator client {
 datasource db {
   provider = "postgresql"
   url = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
-  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
+  directUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb" // uses a direct connection
+  shadowDatabaseUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb"// used for migrations
 }
 
 model Todo {
