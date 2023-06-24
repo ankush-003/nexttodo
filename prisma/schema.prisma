@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url = env("DATABASE_URL")
   // url = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779-pooler.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15" // uses connection pooling
   // directUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb" // uses a direct connection
