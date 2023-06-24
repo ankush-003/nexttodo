@@ -6,10 +6,11 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779-pooler.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15" // uses connection pooling
-  directUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb" // uses a direct connection
-  shadowDatabaseUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb"// used for migrations
+  provider = "mysql"
+  url = "mysql://ofzf4u8tpdxha847k4rc:pscale_pw_BsTLPL2sa2bOyWacjC9X16BXYIvYz8DatWaVfejNTKL@aws.connect.psdb.cloud/nexttodo?sslaccept=strict"
+  // url = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779-pooler.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15" // uses connection pooling
+  // directUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb" // uses a direct connection
+  // shadowDatabaseUrl = "postgres://default:xsn3OzPdRD2f@ep-green-union-359779.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb"// used for migrations
 }
 
 model Todo {

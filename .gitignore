@@ -38,3 +38,6 @@ next-env.d.ts
 # .env
 .vercel
 .env*.local
+
+#prisma
+prisma/migrations
